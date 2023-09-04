@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fgmh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ovip-tenant/byoc-app-mgbl/fgmh@sha256:c1f9fc9fd683134ecb13e50a711e1b157a5e4ea19a98f97de4f9818fe76fa2ed
+        name: my-java-quarkus
+        resources: {}
+status: {}
