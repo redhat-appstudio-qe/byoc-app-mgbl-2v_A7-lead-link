@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: fgmh
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-ovip-tenant/byoc-app-mgbl/fgmh@sha256:c1f9fc9fd683134ecb13e50a711e1b157a5e4ea19a98f97de4f9818fe76fa2ed
         name: my-java-quarkus
         ports:
         - containerPort: 8081
